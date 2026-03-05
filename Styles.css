@@ -1,0 +1,258 @@
+
+body{
+    font-family:Arial, sans-serif;
+    background:#0b0f1a;
+    color:white;
+    text-align:center;
+    margin:0;
+}
+
+.header{
+    background:#1e2a38;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+.title{
+    font-size:48px;
+    color:#00f7ff;
+    text-shadow:0 0 10px #00f7ff,0 0 20px #00f7ff,0 0 40px #00f7ff;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes glow{
+    from{ text-shadow:0 0 10px #00f7ff; }
+    to{ text-shadow:0 0 30px #00f7ff,0 0 60px #00f7ff; }
+}
+
+
+
+
+
+
+
+
+
+
+
+.tagline{ font-style:italic; }
+.date{ font-size:14px; opacity:0.8; }
+
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+background: linear-gradient(90deg, #2c003e, #0ff);
+    padding: 12px 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0 20px;
+    padding: 10px 15px;
+    position: relative;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+}
+
+.navbar a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    left: 0;
+    bottom: 0;
+    transition: 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #0b0f1a;
+    transform: translateY(-3px);
+}
+
+.navbar a:hover::after {
+    width: 100%;
+}
+
+
+.topic-box{
+    width:600px;
+    margin:50px auto 30px;
+    padding:25px;
+    background:#141a2e;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.3);
+}
+
+
+
+
+
+
+
+
+
+
+.magazine-container{
+    width:700px;
+    margin:auto;
+    position:relative;
+    height:400px;
+}
+.magazine{
+    position:absolute;
+    border-radius:6px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.3);
+    transition:transform 0.4s;
+}
+.magazine:hover{ transform:scale(1.5) rotate(3deg); }
+.img1{width:150px; top:20px; left:50px; transform:rotate(-8deg);}
+.img2{width:180px; bottom:120px; left:220px; transform:rotate(6deg);}
+.img3{width:140px; top:40px; right:80px; transform:rotate(-5deg);}
+.img4{width:170px; bottom:10px; left:100px; transform:rotate(10deg);}
+.img5{width:130px; bottom:40px; right:120px; transform:rotate(-12deg);}
+.img6{width:150px; bottom:150px; left:300px; transform:rotate(5deg);}
+.img7{width:160px; top:200px; right:250px; transform:rotate(-7deg);}
+
+
+
+
+
+
+
+
+
+
+
+.articles{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    width:85%;
+    margin:40px auto;
+}
+.card{
+    background:#141a2e;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 15px rgba(0,255,255,0.2);
+    transition:transform 0.3s;
+}
+.card:hover{ transform:translateY(-8px); }
+.card img{
+    width:100%;
+    border-radius:8px;
+    transition:transform 0.4s;
+}
+.card img:hover{ transform:rotate(3deg) scale(1.05); }
+.dropcap::first-letter{
+    font-size:40px;
+    font-weight:bold;
+    float:left;
+    margin-right:8px;
+    color:#1abc9c;
+}
+
+
+.video{ margin:50px auto; }
+iframe{ border-radius:10px; }
+
+
+.updates{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+.updates a{
+    text-decoration:none;
+    color:white;
+    width:250px;
+    background:#141a2e;
+    padding:10px;
+    border-radius:8px;
+    box-shadow:0 3px 8px rgba(0,255,255,0.2);
+    transition:transform 0.3s;
+}
+.updates a:hover{ transform:scale(1.05); }
+.updates img{ width:100%; border-radius:6px; }
+
+
+
+
+
+
+
+
+
+
+.section-title{
+    font-size:36px;
+    margin-top:30px;
+    margin-bottom:20px;
+    color:#00f7ff;
+    text-shadow: 0 0 5px #00f7ff;
+}
+
+.sub-title{
+    font-size:28px;
+    margin-top:30px;
+    margin-bottom:15px;
+    color:#1abc9c;
+}
+
+
+.note-card{
+    background:#141a2e;
+    padding:20px;
+    margin:20px auto;
+    max-width:700px;
+    border-radius:10px;
+    box-shadow:0 4px 12px rgba(0,255,255,0.2);
+    line-height:1.6;
+    text-align:left;
+}
+
+
+.neat-profile{
+    text-align:center;
+    margin-top:40px;
+    background:#141a2e;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 4px 12px rgba(0,255,255,0.2);
+}
+
+.neat-profile .profilepic{
+    width:120px;
+    border-radius:50%;
+    margin-bottom:15px;
+}
